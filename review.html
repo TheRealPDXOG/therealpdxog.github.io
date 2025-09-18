@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Strain Reviews | The Real PDX OG</title>
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <header>
+    <img src="assets/images/pdxog-logo.svg" alt="PDX OG Logo" class="logo" />
+    <h1>Strain Reviews</h1>
+  </header>
+
+  <section id="search">
+    <h2>Search Reviews</h2>
+    <input type="text" id="search-name" placeholder="Marijuana Name" />
+    <input type="text" id="search-strain" placeholder="Strain Type" />
+    <input type="text" id="search-grower" placeholder="Grower/Farm" />
+    <input type="text" id="search-dispensary" placeholder="Dispensary" />
+    <button onclick="filterReviews()">Search</button>
+  </section>
+
+  <section id="reviews">
+    <!-- Reviews will be loaded here -->
+  </section>
+
+  <script src="scripts/reviews.js"></script>
+</body>
+</html>

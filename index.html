@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Age Verification</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      padding: 5rem;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .logo {
+      height: 60px;
+      width: auto;
+      display: block;
+      margin: 0 auto;
+    }
+    @media (max-width: 600px) {
+      .logo {
+        height: 40px;
+      }
+    }
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+    button {
+      margin: 1rem;
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      background-color: #2e7d32;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #1b5e20;
+    }
+  </style>
+</head>
+<body>
+  <img src="assets/images/pdxog-logo.svg" alt="PDX OG Logo" class="logo" />
+  <h1>Welcome to The Real PDX OG</h1>
+  <p>This site contains cannabis-related content. You must be 21 or older to enter.</p>
+  <button onclick="enterSite()">I am 21+</button>
+  <button onclick="window.location.href='https://www.google.com'">Nope</button>
+
+  <script>
+    function enterSite() {
+      window.location.href = "home.html";
+    }
+  </script>
+</body>
+</html>
