@@ -132,7 +132,7 @@ main {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-   margin-top: 60vh; /* This moves it down slightly */
+   margin-top: 80vh; /* This moves it down slightly */
 
 }
 
