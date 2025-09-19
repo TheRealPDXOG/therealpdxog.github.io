@@ -132,7 +132,7 @@ main {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-   margin-top: 80vh; /* This moves it down slightly */
+   margin-top: 50vh; /* This moves it down slightly */
 
 }
 
@@ -202,3 +202,42 @@ footer {
   max-width: 600px;
   box-shadow: 0 0 10px rgba(0,255,255,0.2);
 }
+
+@media (max-width: 768px) {
+  .modal {
+    position: fixed;
+    bottom: 0;
+    top: auto;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background: rgba(0, 0, 0, 0.85);
+    justify-content: center;
+    align-items: flex-end;
+    z-index: 10;
+  }
+
+  .modal-content {
+    margin: 0;
+    height: auto;
+    max-height: 90vh;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .modal-image-container {
+    height: 60vh;
+  }
+
+  .modal-notes {
+    height: auto;
+    max-height: 30vh;
+    overflow-y: auto;
+  }
+
+  .close {
+    top: 10px;
+    right: 10px;
+    position: absolute;
+  }
+}
+
