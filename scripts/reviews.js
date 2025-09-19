@@ -1,6 +1,6 @@
 let reviews = [];
 
-fetch('data/reviews.json')
+fetch('reviews.json')
   .then(res => res.json())
   .then(data => {
     reviews = data;
