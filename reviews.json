@@ -14,5 +14,24 @@
     "dispensary": "PDX Collective",
     "rating": "🔥🔥🔥",
     "notes": "Zesty pipe hit, mellow joint burn."
+  },
+  {
+    "name": "Blue Dream",
+    "strain": "Sativa",
+    "grower": "Sunshine Grow Co.",
+    "dispensary": "PDX Collective",
+    "rating": "🔥🔥🔥",
+    "notes": "Zesty pipe hit, mellow joint burn."
+  },
+  {
+    "strain": "Sour Diesel",
+    "type": "Sativa",
+    "packaged": "Falcon Wholesale",
+    "THC/CBD": "23.68%/0.00 mg/g",
+    "batch": "1A40103000566090000003798",
+    "grower/producer": "Columbia",
+    "dispensary": "Mr Nice Guy (Holgate)",
+    "rating": "🔥",
+    "notes": "Slow driving ride, gets the job done, budget friendly"
   }
 ]

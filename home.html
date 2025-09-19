@@ -25,28 +25,75 @@
   <main>
     <section class="intro">
       <h2>Welcome to the OG Zone</h2>
-      <p>This is where taste meets truth. I break down the best strains in Portland—how they smell, how they hit, and how they feel. No fluff, just fire.</p>
+      <p>This is where taste meets truth. We break down the best strains in Portland—how they smell, how they hit, and how they feel. No fluff, just fire.</p>
     </section>
 
-    <section class="featured">
-      <h2>🔥 Featured Strain of the Week</h2>
-      <div class="strain-card">
-        <h3>Blue Dream</h3>
-        <ul>
-          <li><strong>Taste:</strong> Sweet berry with a hint of pine</li>
-          <li><strong>Smell:</strong> Earthy and floral</li>
-          <li><strong>Expansion:</strong> Smooth inhale, light chest bloom</li>
-          <li><strong>Effect:</strong> Euphoric, creative, mellow focus</li>
-          <li><strong>Grower:</strong> Rose City Farms</li>
-          <li><strong>Available at:</strong> Green Haven Dispensary</li>
-        </ul>
+    <section class="featured-carousel">
+      <h2>🔥 Featured Strains</h2>
+      <div class="carousel">
+        <div class="carousel-track">
+          <div class="slide" onclick="openModal('fire')">
+            <h2>Fire Strain</h2>
+            <h3>Blue Dream</h3>
+            <ul>
+              <li><strong>Taste:</strong> Sweet berry with a hint of pine</li>
+              <li><strong>Smell:</strong> Earthy and floral</li>
+              <li><strong>Expansion:</strong> Smooth inhale, light chest bloom</li>
+              <li><strong>Effect:</strong> Euphoric, creative, mellow focus</li>
+              <li><strong>Grower:</strong> Rose City Farms</li>
+              <li><strong>Available at:</strong> Green Haven Dispensary</li>
+            </ul>
+            <p><strong>Rating:</strong> Pipe: 🔥🔥🔥 | Joint: 🔥🔥</p>
+          </div>
+
+          <div class="slide" onclick="openModal('budget')">
+            <h2>Budget Strain</h2>
+            <h3>Sour Diesel</h3>
+            <ul>
+              <li><strong>Taste:</strong>Light Earthy / Mostly bland</li>
+              <li><strong>Smell:</strong> Earthy Aroma / Sweet and woody</li>
+              <li><strong>Expansion:</strong> No Expansion</li>
+              <li><strong>Effect:</strong> Energetic, buzzy, short-lived</li>
+              <li><strong>Grower:</strong> Columbia (Producer)</li>
+              <li><strong>Harvest Date:</strong> 10/26/2023</li>
+              <li><strong>Available at:</strong> Mr Nice Guy (Holgate)</li>
+            </ul>
+            <p><strong>Rating:</strong> Pipe: 🔥🔥 | Joint: 🔥🔥</p>
+          </div>
+
+          <!-- Add more slides here -->
+        </div>
       </div>
+      <button class="nav prev" onclick="prevSlide()">←</button>
+      <button class="nav next" onclick="nextSlide()">→</button>
     </section>
+
+    <!-- Modal -->
+    <div id="strain-modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+
+        <div class="modal-image-container">
+          <img id="modal-image" src="" alt="Strain Image" />
+          <button class="modal-nav prev" onclick="prevImage()">←</button>
+          <button class="modal-nav next" onclick="nextImage()">→</button>
+        </div>
+
+        <div class="modal-notes">
+          <p id="modal-notes-text"></p>
+        </div>
+      </div>
+    </div>
+
+
+
   </main>
 
   <footer>
     <p>&copy; 2025 The Real PDX OG. All rights reserved.</p>
     <p><a href="mailto:therealpdxog1977@gmail.com">Contact Me</a></p>
   </footer>
+  <script src="scripts/home.js"></script>
+
 </body>
 </html>
