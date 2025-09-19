@@ -1,23 +1,45 @@
+let startX = 0;
+
+document.querySelector('.carousel-track').addEventListener('touchstart', (e) => {
+  startX = e.touches[0].clientX;
+});
+
+document.querySelector('.carousel-track').addEventListener('touchend', (e) => {
+  const endX = e.changedTouches[0].clientX;
+  if (startX - endX > 50) nextSlide();
+  else if (endX - startX > 50) prevSlide();
+});
+
+
 let currentSlide = 0;
 
+function renderDots() {
+  const dotsContainer = document.getElementById("carousel-dots");
+  const slides = document.querySelectorAll(".carousel-track .slide");
+  dotsContainer.innerHTML = "";
+
+  slides.forEach((_, index) => {
+    const dot = document.createElement("span");
+    dot.classList.add("dot");
+    if (index === currentSlide) dot.classList.add("active");
+    dot.addEventListener("click", () => {
+      currentSlide = index;
+      updateCarousel();
+    });
+    dotsContainer.appendChild(dot);
+  });
+}
+
 function updateCarousel() {
-  const track = document.querySelector('.carousel-track');
+  const track = document.querySelector(".carousel-track");
   track.style.transform = `translateX(-${currentSlide * 100}%)`;
+  renderDots();
 }
 
-function nextSlide() {
-  const slides = document.querySelectorAll('.carousel-track .slide');
-  currentSlide = (currentSlide + 1) % slides.length;
+document.addEventListener("DOMContentLoaded", () => {
   updateCarousel();
-}
+});
 
-function prevSlide() {
-  const slides = document.querySelectorAll('.carousel-track .slide');
-  currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-  updateCarousel();
-}
-
-document.addEventListener("DOMContentLoaded", updateCarousel);
 
 
 let currentImageIndex = 0;
@@ -26,9 +48,9 @@ let activeStrainImages = [];
 const strainData = {
   fire: {
     images: [
-      { src: "assets/images/blue-dream-1.jpg", note: "Dense nugs with frosty trichomes." },
-      { src: "assets/images/blue-dream-2.jpg", note: "Smooth burn, ideal for glass." },
-      { src: "assets/images/blue-dream-3.jpg", note: "Bright green with purple flecks." }
+      { src: "assets/images/exampleReview.png", note: "Dense nugs with frosty trichomes." },
+      { src: "assets/images/exampleReview.png", note: "Smooth burn, ideal for glass." },
+      { src: "assets/images/exampleReview.png", note: "Bright green with purple flecks." }
     ]
   },
   budget: {
