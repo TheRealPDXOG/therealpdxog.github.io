@@ -32,18 +32,23 @@ function displayReviews(data) {
       <div class="review-card">
         <h3>${r.name} (${r.strain})</h3>
         ${r.image ? `<img src="${r.image}" alt="${r.name}" class="review-thumb" onclick="openModal('${r.image}')">` : ""}
-        ${r.grower ? `<p><strong>Grower:</strong> ${r.grower}</p>` : ""}
+        ${r["grower"] ? `<p><strong>Grower:</strong> ${r["grower"]}</p>` : ""}
         ${r["grower/producer"] ? `<p><strong>Grower/Producer:</strong> ${r["grower/producer"]}</p>` : ""}
-        ${r.packaged ? `<p><strong>Packaged by:</strong> ${r.packaged}</p>` : ""}
+        ${r["packaged"] ? `<p><strong>Packaged by:</strong> ${r["packaged"]}</p>` : ""}
+        ${r["harvest date"] ? `<p><strong>Harvest Date:</strong> ${r["harvest date"]}</p>` : ""}
         ${r["THC/CBD"] ? `<p><strong>THC/CBD:</strong> ${r["THC/CBD"]}</p>` : ""}
-        ${r.batch ? `<p><strong>Batch ID:</strong> ${r.batch}</p>` : ""}
-        ${r.dispensary ? `<p><strong>Dispensary:</strong> ${r.dispensary}</p>` : ""}
+        ${r["batch"] ? `<p><strong>Batch ID:</strong> ${r["batch"]}</p>` : ""}
+        ${r["dispensary"] ? `<p><strong>Dispensary:</strong> ${r["dispensary"]}</p>` : ""}
+        ${r["taste"] ? `<p><strong>Taste:</strong> ${r["taste"]}</p>` : ""}
+        ${r["smell"] ? `<p><strong>Smell:</strong> ${r["smell"]}</p>` : ""}
+        ${r["Expansion"] ? `<p><strong>Expansion:</strong> ${r["Expansion"]}</p>` : ""}
         <p><strong>Rating:</strong> ${r.rating}</p>
         <p><strong>Notes:</strong> ${r.notes}</p>
       </div>
     `;
   });
 }
+
 
 function openModal(imgSrc) {
   const modal = document.getElementById("image-modal");
