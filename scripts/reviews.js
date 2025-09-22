@@ -31,6 +31,7 @@ function displayReviews(data) {
     container.innerHTML += `
       <div class="review-card">
         <h3>${r.name} (${r.strain})</h3>
+        ${r.image ? `<img src="${r.image}" alt="${r.name}" class="review-thumb" onclick="openModal('${r.image}')">` : ""}
         ${r.grower ? `<p><strong>Grower:</strong> ${r.grower}</p>` : ""}
         ${r["grower/producer"] ? `<p><strong>Grower/Producer:</strong> ${r["grower/producer"]}</p>` : ""}
         ${r.packaged ? `<p><strong>Packaged by:</strong> ${r.packaged}</p>` : ""}
@@ -43,3 +44,15 @@ function displayReviews(data) {
     `;
   });
 }
+
+function openModal(imgSrc) {
+  const modal = document.getElementById("image-modal");
+  const modalImg = document.getElementById("modal-img");
+  modalImg.src = imgSrc;
+  modal.style.display = "flex";
+}
+
+function closeModal() {
+  document.getElementById("image-modal").style.display = "none";
+}
+

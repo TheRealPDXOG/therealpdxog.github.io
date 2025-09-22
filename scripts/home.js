@@ -46,7 +46,14 @@ let currentImageIndex = 0;
 let activeStrainImages = [];
 
 const strainData = {
-  fire: {
+    fire: {
+    images: [
+      { src: "assets/images/MoonBow112ArchSpoon.jpg", note: "Fruity ice cream offering up warm cozy chest hugs." },
+      { src: "assets/images/MoonBow112ArchCoin.jpg", note: "This one checks all my boxes, premium ride." },
+      { src: "assets/images/MoonBow112ArchTerps.jpg", note: "A gooey trichome berry sunday." }
+    ]
+  },
+  fire1: {
     images: [
       { src: "assets/images/exampleReview.png", note: "Dense nugs with frosty trichomes." },
       { src: "assets/images/exampleReview.png", note: "Smooth burn, ideal for glass." },
@@ -55,6 +62,7 @@ const strainData = {
   },
   budget: {
     images: [
+      { src: "assets/images/SourDieselNGSpoon.jpg", note: "Serving up honest taste, bland earthy taste" },
       { src: "assets/images/SourDieselNGD.jpg", note: "Small tight nugs, Not sticky but solid aroma." },
       { src: "assets/images/SourDieselTerpsNGD.jpg", note: "Lightly frosted, bland exhale." },
     ]

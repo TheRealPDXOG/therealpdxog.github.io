@@ -1,29 +1,5 @@
 [
   {
-    "name": "Purple Punch",
-    "strain": "Indica",
-    "grower": "Fire Farms",
-    "dispensary": "Green Oasis",
-    "rating": "🔥🔥🔥🔥",
-    "notes": "Smooth in a bong, citrusy in a joint."
-  },
-  {
-    "name": "Lemon Haze",
-    "strain": "Sativa",
-    "grower": "Sunshine Grow Co.",
-    "dispensary": "PDX Collective",
-    "rating": "🔥🔥🔥",
-    "notes": "Zesty pipe hit, mellow joint burn."
-  },
-  {
-    "name": "Blue Dream",
-    "strain": "Sativa",
-    "grower": "Sunshine Grow Co.",
-    "dispensary": "PDX Collective",
-    "rating": "🔥🔥🔥",
-    "notes": "Zesty pipe hit, mellow joint burn."
-  },
-  {
     "name": "Sour Diesel",
     "strain": "Sativa",
     "packaged": "Falcon Wholesale",
@@ -37,5 +13,82 @@
     "Expansion": "Smooth inhale, slight throat tickle",
     "rating": "🔥",
     "notes": "Slow driving ride, none of the enjoyable perks along the way, gets the job done, budget friendly"
+  },
+  {
+    "name": "GMO",
+    "strain": "Indica Hybrid",
+    "packaged": "unknown",
+    "THC/CBD": "unknown",
+    "batch": "unknown",
+    "harvest date": "unknown",
+    "grower/producer": "unknown",
+    "dispensary": "unknown",
+    "taste": "Garlic, hints of pepper and onions",
+    "smell": "Garlicky earthy sweet goodness",
+    "Expansion": "Smooth inhale, slight chest bump on them big hits, pleasant after taste",
+    "rating": "🔥🔥🔥",
+    "notes": "Fast Ride with some nice features, very enjoyable"
+  },
+   {
+    "name": "Mount Hood Magic",
+    "strain": "Sativa",
+    "packaged": "Archive Portland",
+    "THC/CBD": "27.61% 0.11%",
+    "batch": "1A40103000086C5000012609",
+    "harvest date": "08/19/2025",
+    "grower/producer": "Resin Ranchers",
+    "dispensary": "Archive Portland",
+    "taste": "Sweet shreaded carrots",
+    "smell": "Sweet Shreaded carrots",
+    "Expansion": "Smooth inhale, light touch expansion",
+    "rating": "🔥🔥",
+    "notes": "Nice ride but short lived, hash after, can get alot better if left in the jar awhile"
+  },
+  {
+    "name": "MoonBow #112",
+    "strain": "Indica Hybrid",
+    "packaged": "Archive Portland",
+    "THC/CBD": "29.3% 0.06%",
+    "batch": "1A401030000C095000004577",
+    "harvest date": "06/20/2025",
+    "grower/producer": "Archive",
+    "dispensary": "Archive Portland",
+    "taste": "citrusy berry delight (Trix or Fruity pebbles)",
+    "smell": "Sweet berrys hints of pepper garlic, pine & nuts oh my!!",
+    "Expansion": "Smooth inhale, nice cozy chest hug",
+    "rating": "🔥🔥🔥🔥🔥",
+    "notes": "All the perks are in this ride, Awesome Job Archive!!! I hope you keep this one in your line up",
+    "image": "assets/images/MoonBow112ArchTerps.jpg"
+  },
+  {
+    "name": "Animal Sherbmints x Purple Wreck",
+    "strain": "Indica Hybrid",
+    "packaged": "Archive Portland",
+    "THC/CBD": "25.83% 0.01%",
+    "batch": "1A4010300039A45000004047",
+    "harvest date": "07/22/2025",
+    "grower/producer": "Millerville Wholesale",
+    "dispensary": "Archive Portland",
+    "taste": "Light lemony citrus, hints of pepper garlic sweet earthy",
+    "smell": "Sweet shreaded carrots, hints of that lemony citrus",
+    "Expansion": "Smooth inhale, very light chest bump on them big hits",
+    "rating": "🔥🔥🔥",
+    "notes": "Nice ride, budget friendly for the features."
+  },
+  {
+    "name": "Planet Marshmallow",
+    "strain": "Indica Hybrid",
+    "packaged": "Archive Portland",
+    "THC/CBD": "30.49% 0.12%",
+    "batch": "1A4010300039A45000004029",
+    "harvest date": "07/24/2025",
+    "grower/producer": "Millerville Wholesale",
+    "dispensary": "Archive Portland",
+    "taste": "inhale: bitter, sour apple, almost chemical / exhale pure magic: citrusy berry apple delight (Trix or Fruity pebbles)",
+    "smell": "Sour apple, grape berry mix jolly rancher",
+    "Expansion": "Smooth inhale, no expansion effect",
+    "rating": "🔥🔥",
+    "notes": "This ride was pleasantly surprising, first the taste buds say spit it out then they say give me more! budget friendly."
   }
+  
 ]
