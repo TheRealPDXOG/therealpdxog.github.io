@@ -186,6 +186,18 @@ main {
   z-index: 10000;
 }
 
+.review-thumb {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  object-fit: cover;
+  box-shadow: 0 0 8px rgba(0,255,255,0.2);
+}
+
+
 footer {
   background: #333;
   color: white;
